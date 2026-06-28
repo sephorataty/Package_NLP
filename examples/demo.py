@@ -10,7 +10,7 @@ Remplacez le texte d'exemple par le contenu de votre roman nettoyé
 (`roman_clean`) pour l'utiliser sur vos propres données.
 """
 
-from tokenisation_fr import (
+from Package_NLP.tokenisation_fr import (
     word_tokens,
     afficher_resume,
     sentence_tokens,
@@ -42,7 +42,7 @@ print("2. TOKENISATION SPACY (extrait)")
 print("=" * 60)
 extrait_ch1 = roman_clean[:5000]
 try:
-    from tokenisation_fr import spacy_tokens
+    from Package_NLP.tokenisation_fr import spacy_tokens
 
     tokens_spacy = spacy_tokens(extrait_ch1)
     print(f"Tokens NLTK (extrait)  : {len(word_tokens(extrait_ch1))}")
