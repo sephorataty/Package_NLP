@@ -1,0 +1,6 @@
+# Dépendance principale
+nltk>=3.6
+
+# Dépendance optionnelle pour le module SpaCy (décommenter si besoin) :
+# spacy>=3.0
+# Puis : python -m spacy download fr_core_news_sm
